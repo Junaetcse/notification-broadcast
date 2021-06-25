@@ -13,7 +13,16 @@ use App\Http\Controllers\HomeController;
 |
 */
 
+class Task {
+    public $id;
+
+    public function __construct($id){
+        $this->id = $id;
+    }
+}
+
 Route::get('/', function () {
+    App\Events\TaskUpdate::dispatch(new Task(1));
     return view('welcome');
 });
 

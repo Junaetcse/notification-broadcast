@@ -8,5 +8,7 @@
 </head>
 <body>
     <p>Docyument</p>
+
+    <script src="/js/app.js"></script>
 </body>
 </html>
